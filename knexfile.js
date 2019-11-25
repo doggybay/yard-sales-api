@@ -1,4 +1,4 @@
-let connectionString = process.platform === 'win32' ? 'postgres://postgres:root@localhost/yard-sales' : 'postgres://localhost/yard-sales'
+let connectionString = process.platform === 'win32' ? 'postgres://db_access:freedom@localhost:5433/yard-sales' : 'postgres://localhost/yard-sales'
   
   module.exports = {
     development: {
