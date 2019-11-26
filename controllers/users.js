@@ -5,5 +5,5 @@ exports.getAllUsers = (req, res) => {
 }
 
 exports.getOneUser = (req, res) => {
-  CustomElementRegistry.query().findById(req.params.id).eager('sales').then(user => res.json(user))
+  User.query().findById(req.params.id).eager('sales').then(user => res.json(user))
 }
