@@ -6,7 +6,7 @@ class Sale extends Model {
   }
 
   static get relationMappings() {
-    const SalePicture = ('./SalePicture')
+    const SalePicture = require('./SalePicture')
     return {
       pictures: {
         relation: Model.HasManyRelation,

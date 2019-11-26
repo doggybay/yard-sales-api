@@ -1,12 +1,13 @@
 const { Model } = require('objection');
 
+
 class User extends Model {
   static get tableName() {
     return 'users'
   }
 
   static get relationMappings() {
-    const Sale = ('./Sale')
+    const Sale = require('./Sale')
     return {
       sales: {
         relation: Model.HasManyRelation,
@@ -16,7 +17,7 @@ class User extends Model {
           to: 'sales.user_id'
         }
       }
-    }
+    };
   }
 
   static get jsonSchema() {
