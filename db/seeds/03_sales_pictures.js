@@ -4,456 +4,406 @@ exports.seed = function(knex) {
   return knex('sales_pictures').del()
     .then(function () {
       // Inserts seed entries
-      return knex('sales_pictures').insert([
-        {
-          sale_id: 41,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 1,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
+      return knex("sales_pictures").insert([
         {
           sale_id: 6,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 25,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 21,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 3,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 37,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 4,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 43,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 33,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 2,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 19,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 25,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 22,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 43,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 18,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 33,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 28,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 13,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 22,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 30,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 46,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 22,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 3,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 48,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 36,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 25,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 42,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 37,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 20,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 50,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 41,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 39,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 29,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 17,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 42,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 32,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 21,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 30,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 13,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 13,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 37,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 26,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 45,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 24,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
-        },
-        {
-          sale_id: 37,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
+          pic: "http://placehold.it/32x32"
         },
         {
           sale_id: 38,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
+          pic: "http://placehold.it/32x32"
         },
         {
-          sale_id: 49,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
+          sale_id: 29,
+          pic: "http://placehold.it/32x32"
         },
         {
-          sale_id: 24,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
+          sale_id: 40,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 32,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 9,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 13,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 17,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 30,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 14,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 39,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 45,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 45,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 26,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 9,
+          pic: "http://placehold.it/32x32"
         },
         {
           sale_id: 12,
-          main_pic: "http://placehold.it/32x32",
-          first_pic: "http://placehold.it/32x32",
-          second_pic: "http://placehold.it/32x32",
-          third_pic: "http://placehold.it/32x32",
-          fourth_pic: "http://placehold.it/32x32",
-          fifth_pic: "http://placehold.it/32x32"
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 7,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 1,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 16,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 30,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 1,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 23,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 35,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 8,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 17,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 45,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 29,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 26,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 24,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 48,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 35,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 49,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 22,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 48,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 27,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 20,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 4,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 49,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 12,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 49,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 11,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 30,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 37,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 32,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 18,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 3,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 49,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 30,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 47,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 4,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 31,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 4,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 16,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 20,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 44,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 34,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 1,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 29,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 7,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 43,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 50,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 28,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 15,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 25,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 24,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 13,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 19,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 28,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 5,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 25,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 39,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 32,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 30,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 5,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 10,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 31,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 37,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 13,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 22,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 46,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 41,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 3,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 21,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 4,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 10,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 31,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 24,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 2,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 6,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 4,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 29,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 1,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 31,
+          pic: "http://placehold.it/32x32"
+        },
+        {
+          sale_id: 21,
+          pic: "http://placehold.it/32x32"
         }
       ]);
     });
