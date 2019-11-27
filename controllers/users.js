@@ -9,7 +9,7 @@ exports.getOneUser = (req, res) => {
 }
 
 exports.updateOneUser = (req, res) => {
-  User.query().findById(req.params.id).patch(re.body).returning('*').then(updatedUser => res.json(updatedUser))
+  User.query().findById(req.params.id).patch(req.body).returning('*').then(updatedUser => res.json(updatedUser))
 }
 
 exports.deleteOneUser = (req, res) => {

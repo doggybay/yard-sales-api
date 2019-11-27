@@ -4,8 +4,6 @@ exports.up = function(knex) {
     table.increments();
     table.integer('sale_id').references('sales.id').notNullable().onDelete('CASCADE');
     table.string('pic').notNullable();
-    
-
   })
 };
 

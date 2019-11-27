@@ -9,7 +9,7 @@ router.get('/users', usersController.getAllUsers)
 //Get one user
 router.get('/users/:id', usersController.getOneUser)
 
-//Add one user
+//Add a new user
 router.post('/users', usersController.addOneUser)
 
 //Update one user
