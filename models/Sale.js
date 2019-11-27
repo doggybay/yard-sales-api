@@ -1,4 +1,4 @@
-const { Model } = require('objection');
+const { Model } = require('objection')
 
 class Sale extends Model {
   static get tableName() {
@@ -6,17 +6,17 @@ class Sale extends Model {
   }
 
   static get relationMappings() {
-    const SalePicture = require('./SalePicture')
+    const SalePicture = require('./Sale_Picture')
     return {
-      pictures: {
+      sales_pictures: {
         relation: Model.HasManyRelation,
         modelClass: SalePicture,
         join: {
-          from: 'sales.id',
-          to: 'sales_pictures.sale_id'
+          from: "sales.id",
+          to: "sales_pictures.sale_id"
         }
       }
-    }
+    };
   }
 
   static get jsonSchema() {

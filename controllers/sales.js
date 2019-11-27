@@ -1,6 +1,6 @@
 const Sale = require('../models/Sale')
 
-exports.getAllSales = (req, res) => {
+exports.getAllSales = async (req, res) => {
   Sale.query().eager('sales_pictures').then(sales => res.json(sales))
 }
 
