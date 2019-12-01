@@ -2,7 +2,7 @@
 
 ## Available Routes
 *All available routes have a base url of:*
-> http://localhost:800/api
+> `http://localhost:800/api`
 ---
 ### Users
 - **Get** all users:
