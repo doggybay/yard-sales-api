@@ -1,11 +1,11 @@
 const Sale = require('../models/Sale')
 
 exports.getAllSales = async (req, res) => {
-  Sale.query().eager('sales_pictures').then(sales => res.json(sales))
+  Sale.query().eager('pictures').then(sales => res.json(sales))
 }
 
 exports.getOneSale = (req, res) => {
-  Sale.query().findById(req.params.id).eager('sales_pictures').then(sale => res.json(sale))
+  Sale.query().findById(req.params.id).eager('pictures').then(sale => res.json(sale))
 }
 
 exports.updateOneSale = (req, res) => {

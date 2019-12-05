@@ -9,7 +9,7 @@ const knexInstance = require('./db/knex');
 
 const users = require('./routes/users');
 const sales = require('./routes/sales');
-const salesPictures = require('./routes/sales_pictures');
+const pictures = require('./routes/pictures');
 
 Model.knex(knexInstance);
 
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Usable routes
 app.use('/api', users);
 app.use('/api', sales);
-app.use('/api', salesPictures);
+app.use('/api', pictures);
 
 //Check if server is up
 app.get("/", (req, res) => {
