@@ -6,14 +6,14 @@ class Sale extends Model {
   }
 
   static get relationMappings() {
-    const SalePicture = require('./Sale_Picture')
+    const Picture = require('./Picture')
     return {
-      sales_pictures: {
+      pictures: {
         relation: Model.HasManyRelation,
-        modelClass: SalePicture,
+        modelClass: Picture,
         join: {
           from: "sales.id",
-          to: "sales_pictures.sale_id"
+          to: "pictures.sale_id"
         }
       }
     };

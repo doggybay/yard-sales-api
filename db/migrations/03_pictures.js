@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('sales_pictures', table => {
+  return knex.schema.createTable('pictures', table => {
     table.increments();
     table.integer('sale_id').references('sales.id').notNullable().onDelete('CASCADE');
     table.string('pic').notNullable();
@@ -8,5 +8,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTable('sales_pictures');
+  return knex.schema.dropTable('pictures');
 };
