@@ -19,3 +19,13 @@ exports.deleteOneUser = (req, res) => {
 exports.addOneUser = (req, res) => {
   User.query().insert(req.body).returning('*').then(newUser => res.json(newUser))
 }
+
+exports.authUser = (req, res) => {
+  const user = User.query().findBy('email', req.body.email)
+
+  if (user && req.body.password === user.password) {
+    res.json(user)
+  } else {
+    res.sendStatus(401)
+  }
+}

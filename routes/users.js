@@ -12,6 +12,9 @@ router.get('/users/:id', usersController.getOneUser)
 //Add a new user
 router.post('/users', usersController.addOneUser)
 
+//Auth a user
+router.post('/users/login', usersController.authUser)
+
 //Update one user
 router.patch('/users/:id', usersController.updateOneUser)
 
