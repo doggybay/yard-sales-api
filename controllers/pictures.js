@@ -15,3 +15,11 @@ exports.deleteOnePicture = (req, res) => {
 exports.addOnePicture = (req, res) => {
   Picture.query().insert(req.body).returning('*').then(newPicture => res.json(newPicture))
 }
+
+exports.addPictures = (req, res) => {
+  const pictures = res.body
+  const newPictures = []
+  pictures.forEach(picture => {
+    Picture.query().insert(picture).returning('*').then(newPicture => newPictures.push(newPicture))
+  }).then(res.json(newPictures))
+}
