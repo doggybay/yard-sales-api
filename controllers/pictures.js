@@ -17,9 +17,5 @@ exports.addOnePicture = (req, res) => {
 }
 
 exports.addPictures = (req, res) => {
-  const pictures = res.body
-  const newPictures = []
-  pictures.forEach(picture => {
-    Picture.query().insert(picture).returning('*').then(newPicture => newPictures.push(newPicture))
-  }).then(res.json(newPictures))
+  Picture.query().insert(req.body).returning('*').then(newPicture => res.json(newPicture)
 }

@@ -1,4 +1,5 @@
 const Sale = require('../models/Sale')
+const knex = require('../db/knex')
 
 exports.getAllSales = async (req, res) => {
   Sale.query().eager('pictures').then(sales => res.json(sales))
@@ -17,5 +18,36 @@ exports.deleteOneSale = (req, res) => {
 }
 
 exports.addOneSale = (req, res) => {
-  Sale.query().insert(req.body).returning('*').then(newSale => res.json(newSale))
+  // Taking sale out of the req body
+  let sale = req.body
+
+  // Creating the new sale object
+  let formattedSale = {
+    user_id: sale.user_id,
+    title: sale.title,
+    details: sale.details,
+    location: sale.location,
+    date_time: sale.date_time
+  }
+
+  // Inserting the new sale object into the sales table
+  Sale.query().insert(formattedSale).returning('*').then(newSale => {
+    let id = newSale.id
+    let pictures = sale.pictures
+
+    // Looping through the pictures array obtained from req body
+    for (let i = 0; i < pictures.length; i++) {
+      // Creating the new picture object
+      let formattedPic = {
+        sale_id: id,
+        pic: pictures[i]
+      }
+
+      // Inserting the new picture object into the pictures table
+      knex('pictures').insert(formattedPic).returning('*').then(result => result)
+    }
+
+    // Sending the new sale back
+    res.json(newSale)
+  })
 }
