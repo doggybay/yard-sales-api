@@ -6,7 +6,7 @@ exports.up = function(knex) {
     table.text('details');
     table.integer('user_id').references('users.id').notNullable().onDelete('CASCADE');
     table.string('location').notNullable();
-    table.datetime('date_time').unique().notNullable();
+    table.datetime('date_time').notNullable();
 
   })
 };
