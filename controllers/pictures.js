@@ -17,5 +17,5 @@ exports.addOnePicture = (req, res) => {
 }
 
 exports.addPictures = (req, res) => {
-  Picture.query().insert(req.body).returning('*').then(newPicture => res.json(newPicture)
+  Picture.query().insert(req.body).returning('*').then(newPicture => res.json(newPicture))
 }
