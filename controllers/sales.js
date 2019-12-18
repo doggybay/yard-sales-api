@@ -20,7 +20,7 @@ exports.updateOneSale = (req, res) => {
     date_time: sale.date_time
   }
 
-  Sale.query().findById(req.params.id).patch(saleToUpdate).returning('*').then(updatedSale => {
+  Sale.query().findById(req.params.id).patch(saleToUpdate).returning('*').eager('pictures').then(updatedSale => {
     let id = updatedSale.id
     let pictures = sale.pictures
 
