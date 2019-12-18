@@ -24,21 +24,18 @@ exports.updateOneSale = (req, res) => {
     let id = updatedSale.id
     let pictures = sale.pictures
 
-    // Looping through the pictures array obtained from req body
     for (let i = 0; i < pictures.length; i++) {
       if (!pictures[i].hasOwnProperty('id')) {
-        // Creating the new picture object
+      
       let formattedPic = {
         sale_id: id,
         pic: pictures[i]
       }
 
-      // Inserting the new picture object into the pictures table
         knex('pictures').insert(formattedPic).returning('*').then(result => result)
       }
     }
 
-    // Sending the new sale back
     res.json(updatedSale)
   })
 
