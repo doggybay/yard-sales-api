@@ -1,4 +1,6 @@
-let connectionString = process.platform === 'win32' ? 'postgres://db_access:freedom@localhost:5433/yard-sales' : 'postgres://localhost/yard-sales'
+const { DB_USERNAME, DB_PASSWORD, DB_PORT } = process.env
+
+let connectionString = process.platform === 'win32' ? `postgres://${DB_USERNAME}:${DB_PASSWORD}@localhost:${DB_PORT}/${DB_NAME}` : 'postgres://localhost/yard-sales'
   
   module.exports = {
     development: {
