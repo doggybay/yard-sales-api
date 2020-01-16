@@ -11,7 +11,6 @@ services:
     depends_on:
       - yard-sales-postgres
     environment:
-      DATABASE_URL: postgres://user:pass@postgres:5432/db
       PORT: 8000
       DB_PORT: 5432
       DB_USERNAME: db_access
@@ -27,13 +26,13 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
 
-  yard-sales-postgres:
-    container_name: yard-sales-postgres
-    restart: always
-    image: postgres
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_PASSWORD: docker
-    volumes:
-      - PostgresData:/var/lib/postgresql/data
+  # yard-sales-postgres:
+  #   container_name: yard-sales-postgres
+  #   restart: always
+  #   image: postgres
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     POSTGRES_PASSWORD: docker
+  #   volumes:
+  #     - PostgresData:/var/lib/postgresql/data
